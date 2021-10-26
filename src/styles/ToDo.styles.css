@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  margin: 1rem;
+  color: #ededed;
+}
+
+.todo-card .todo-title {
+  max-width: 75%;
+}
+
+button {
+  width: 5.5rem;
+  height: 2rem;
+  border: none;
+  border-radius: 8px;
+  color: #ededed;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.todo-action .complete {
+  background-color: #da0037;
+}
+
+.todo-action .reset {
+  background-color: #346751;
+}
+
+.todo-container .todo-card {
+  border-bottom: 1px solid #ededed;
+}
+
+.todo-card .completeTask h4 {
+  text-decoration: line-through double;
+  opacity: 0.5;
+}
+
+.todo-card .incompleteTask h4 {
+  text-decoration: none;
+}
+
+/* .todo-container div:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.todo-container div:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+} */

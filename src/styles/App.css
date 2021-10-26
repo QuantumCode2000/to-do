@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #444444;
+}
+
+.App .todo-container {
+  background-color: #171717;
+  box-shadow: -5px 0 20px 15px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  margin-top: 3rem;
+  min-width: 520px;
+}

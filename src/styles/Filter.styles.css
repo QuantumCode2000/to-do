@@ -1,0 +1,37 @@
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background-color: #171717;
+  box-shadow: -5px 0 20px 15px rgb(0 0 0 / 20%);
+}
+
+.filter-buttons li {
+  list-style: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.filter-buttons li button {
+  width: 7rem;
+  height: 2rem;
+  background-color: #171717;
+  cursor: pointer;
+  border-bottom: 1px solid #ededed;
+  border-radius: 1px;
+}
+
+.filter-buttons li button:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.filter-buttons li .selectColorStyle {
+  color: #57ddff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
