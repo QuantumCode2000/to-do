@@ -8,6 +8,7 @@
   border-radius: 10px;
   background-color: #171717;
   box-shadow: -5px 0 20px 15px rgb(0 0 0 / 20%);
+  min-width: 550px;
 }
 
 .filter-buttons li {
@@ -34,27 +35,48 @@
   font-size: 1.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   .filter-buttons {
-    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    background-color: #171717;
+    box-shadow: -5px 0 20px 15px rgb(0 0 0 / 20%);
+    min-width: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
+  .filter-buttons li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
   .filter-buttons li button:hover {
-    transform: scale(0.75);
+    transform: scale(1);
     transition: all 0s;
   }
-
   .filter-buttons li button {
-    width: 7rem;
+    font-size: 10px;
+    width: 5rem;
     height: 3rem;
+
     background-color: #171717;
+    text-align: center;
+
     border-bottom: 0px solid #ededed;
     border-radius: 1px;
   }
 
-  .filter-buttons li {
-    list-style: none;
-    padding-left: 0rem;
-    padding-right: 0rem;
+  .filter-buttons li .selectColorStyle {
+    color: #57ddff;
+    font-weight: bold;
+    font-size: 0.7rem;
   }
 }

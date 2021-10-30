@@ -6,7 +6,10 @@ const Header = ({ taskToComplete }) => {
   return (
     <header className="logo">
       <h4>To - Do App</h4>
-      <p className="task-to-complete">{taskToComplete} tasks to complete</p>
+      <div className="task-to-complete">
+        <p>{taskToComplete + ":"}</p>
+        <p>tasks to complete</p>
+      </div>
     </header>
   );
 };
