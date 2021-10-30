@@ -12,9 +12,6 @@
   border-radius: 1rem;
   margin-top: 2rem;
   min-width: 520px;
-}
-
-.App .todo-container {
   height: 23rem;
   overflow-y: scroll;
   position: relative;
@@ -57,4 +54,12 @@
 .todo-container::-webkit-scrollbar-track-piece:start {
   background: transparent;
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .App .todo-container {
+    min-width: 360px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }

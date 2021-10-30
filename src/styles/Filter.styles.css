@@ -15,7 +15,10 @@
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
+.filter-buttons li button:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
 .filter-buttons li button {
   width: 7rem;
   height: 2rem;
@@ -25,13 +28,33 @@
   border-radius: 1px;
 }
 
-.filter-buttons li button:hover {
-  transform: scale(1.5);
-  transition: all 0.5s;
-}
-
 .filter-buttons li .selectColorStyle {
   color: #57ddff;
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .filter-buttons {
+    width: 95%;
+  }
+
+  .filter-buttons li button:hover {
+    transform: scale(0.75);
+    transition: all 0s;
+  }
+
+  .filter-buttons li button {
+    width: 7rem;
+    height: 3rem;
+    background-color: #171717;
+    border-bottom: 0px solid #ededed;
+    border-radius: 1px;
+  }
+
+  .filter-buttons li {
+    list-style: none;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }

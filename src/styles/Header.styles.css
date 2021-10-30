@@ -27,3 +27,25 @@ header .task-to-complete {
   grid-row: 1;
   grid-column: 3/3;
 }
+
+@media (max-width: 768px) {
+  .logo h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    font-size: 2rem;
+  }
+
+  header .task-to-complete {
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    opacity: 0.9;
+    grid-row: 1;
+    grid-column: 3/3;
+    justify-content: center;
+    align-content: center;
+  }
+}
