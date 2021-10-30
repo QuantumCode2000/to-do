@@ -9,7 +9,7 @@ import Filter from "./components/Filter";
 
 const App = () => {
   // State
-  const [toDoList, setToDoList] = useState([]);
+  const [toDoList, setToDoList] = useState(null);
   const [customShow, setCustomShow] = useState("All");
   const [countTaskToComplete, setCountTaskToComplete] = useState(0);
   // Effect
@@ -17,10 +17,10 @@ const App = () => {
     handleToDoList();
   }, []);
   useEffect(() => {
-    const uncompletedTasks = toDoList.filter(
+    const uncompletedTasks = toDoList?.filter(
       (item) => item.completed === false,
     );
-    setCountTaskToComplete(uncompletedTasks.length);
+    setCountTaskToComplete(uncompletedTasks?.length);
   }, [toDoList]);
 
   // Functions
@@ -39,8 +39,8 @@ const App = () => {
       ),
     );
   };
-  console.log("todo list ", toDoList.length);
-  console.log("tareas no completadas :", countTaskToComplete.length);
+  // console.log("todo list ", toDoList.length);
+  // console.log("tareas no completadas :", countTaskToComplete.length);
   return (
     <div className="App">
       <Header taskToComplete={countTaskToComplete} />

@@ -1,5 +1,10 @@
 .loader {
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.loader-gif {
+  height: 150px;
 }

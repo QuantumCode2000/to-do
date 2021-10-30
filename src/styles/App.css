@@ -9,7 +9,52 @@
 .App .todo-container {
   background-color: #171717;
   box-shadow: -5px 0 20px 15px rgb(0 0 0 / 20%);
-  border-radius: 10px;
-  margin-top: 3rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
   min-width: 520px;
+}
+
+.App .todo-container {
+  height: 23rem;
+  overflow-y: scroll;
+  position: relative;
+}
+
+/* .App .todo-container::-webkit-scrollbar {
+  width: 10px;
+}
+.App .todo-container::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.App .todo-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+ */
+
+.todo-container::-webkit-scrollbar {
+  display: block;
+  width: 0.5rem;
+}
+.todo-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.todo-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-right: none;
+  border-left: none;
+  border-radius: 1rem;
+}
+
+.todo-container::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 1rem;
+}
+
+.todo-container::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 1rem;
 }
